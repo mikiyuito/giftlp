@@ -202,6 +202,20 @@ li {
 
 .first-view__description-span {
   font-size: 60px;
+  position: relative;
+}
+
+.first-view__description-img {
+  
+  position: absolute;
+  bottom: -25px;
+  right: 13px;
+}
+
+@media screen and (max-width: 414px) {
+  .first-view__description-img {
+    right: 6px;
+  }
 }
 
 .first-view__btn-wrapper {
@@ -238,6 +252,13 @@ li {
 @media screen and (max-width: 768px) {
   .first-view__btn::before {
     font-size: 14px;
+    top: 60%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .first-view__btn::before {
+    font-size: 13px;
     top: 60%;
   }
 }
@@ -664,13 +685,19 @@ li {
 
 @media screen and (max-width: 768px) {
   .action__title {
-    font-size: 36px;
+    font-size: 34px;
   }
 }
 
 @media screen and (max-width: 375px) {
   .action__title {
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .action__title {
+    font-size: 28px;
   }
 }
 
