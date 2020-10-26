@@ -139,6 +139,19 @@
 
     &-span {
       font-size: 60px;
+      position: relative;
+
+    }
+
+    &-img {
+      position: absolute;
+      bottom: -25px;
+      right:13px;
+
+      @media screen and (max-width:414px) {
+        right: 6px;
+      }
+
     }
   }
 
@@ -170,6 +183,11 @@
         font-size: 14px;
         top: 60%;
       }
+      @media screen and (max-width: 414px) {
+        font-size: 13px;
+        top: 60%;
+      }
+
     }
 
     &:hover {
@@ -557,11 +575,15 @@
     transition: 2s;
 
     @media screen and (max-width: 768px) {
-      font-size: 36px;
+      font-size: 34px;
     }
 
     @media screen and (max-width: 375px) {
       font-size: 30px;
+    }
+
+    @media screen and (max-width: 350px) {
+      font-size: 28px;
     }
 
     &.fade {
